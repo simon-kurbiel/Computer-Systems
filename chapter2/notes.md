@@ -12,8 +12,16 @@
 2. The |  or bitwise operator : will only be set two 0 when you do 0 | 0
 3. The ^ xor bitwise operator : will be set to 1 if they are different, otherwise it will be 0
 
-### For example
-    1100   1100     1100  
-  | 0100  &0100    ^0100
-    1100   0100     1000
+
 ---
+## Integer Representations
+
+### 1. Unsigned Numbers :
+1. The Maximum number that you can have is $2^n$-1 where n is the number of bits
+2. On the other hand, the least amount of numbers that you can store is 0
+#### For example,
+char only has 8bits which is 1 byte. in this case, the maximum number is $2^8$ - 1 which is 255
+
+### signed Numbers:
+1. In the case of signed numbers the least significant bit has negative weight. 1000(binary) = -1 * $2^3$ = -8
+
