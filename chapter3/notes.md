@@ -15,3 +15,25 @@ gcc -O2 main main.c
 gcc -Og -S main.c
 ```
 ---
+## Data Formats
+
+| C declaration   |      Intel Data Type      |  Assembly-Code Suffix |   Size(bytes) |
+|----------|:-------------:|------:|-------:
+| Char |  Byte | b |  1|
+| Short |   Word   |  w | 2 |
+| Int | Double Word |   l |  4 |
+| Long |  Quad Word | q |  8 |
+| Char * |   Quad Word  |   q | 8 |
+| Float | Single Precision |   s |  4 |
+| Double | Double Precision |    l |  8|
+
+### Data Movement Instructions
+
+#### The Mov Class
+| Instruction|   Effect | Description |
+|----------|:-------------:|------:|
+| moveb |  S, D    D ← S |move byte |
+| movw |    S, D    D ← S  |  move word |
+| movl | S, D    D ← S |  move double word |
+| movq | S, D    D ← S |  move quad word |
+
