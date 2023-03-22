@@ -37,3 +37,11 @@ gcc -Og -S main.c
 | movl | S, D    D ← S |  move double word |
 | movq | S, D    D ← S |  move quad word |
 
+##### For example
+| movabsq | $0x0011223344556677, %rax | %rax = 0011223344556677 |
+|----------|:-------------:|------:|
+| movb | $-1 , %al | %rax = 00112233445566FF |
+movw | $-1, %ax | %rax = 001122334455FFFF |
+movl | $-1, %eax | %rax = 00000000FFFFFFFF |
+movq | $-1, %rax | %rax = FFFFFFFFFFFFFFFF |
+
