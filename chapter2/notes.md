@@ -78,3 +78,24 @@ E = e - Bias
 
 ### Case2 : Denormalized Values
 E = 1 - bias
+
+#### Problem 
+##### Give the IEEE double-precision floating point representation for the following decimal number : -64.5
+
+- [X] First convert to scientific notation
+  - 1000000.1
+  - 1.0000001 * 2^6
+- [X] exp = e+Bias
+  - exp = 6+1023
+  - exp = 1029
+- [X] convert exp to binary
+  - 1029 = 10000000101
+
+- [X] In IEEE
+  - 1 10000000101 0000001
+  
+ ##### What decimal value is represented by the IEEE double-precision floating point representation given in hexadecimal as C0A0000000000000?
+  
+  
+
+
