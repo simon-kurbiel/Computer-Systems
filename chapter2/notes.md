@@ -1,3 +1,4 @@
+
 # Chapter 2
 ---
 ## Different Numbering System
@@ -67,4 +68,7 @@ char only has 8bits which is 1 byte. in this case, the maximum number is $2^8$ -
 
 ### signed Numbers:
 1. In the case of signed numbers the least significant bit has negative weight. 1000(binary) = -1 * $2^3$ = -8
+
+## Floating point
+
 
